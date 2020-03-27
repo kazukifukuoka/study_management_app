@@ -1,0 +1,22 @@
+/* ...
+*= require flatpickr
+*= require flatpickr/themes/material_green
+ */
+
+@import "bootstrap";
+
+// 全体
+.graph-container {
+  @extend .container-fluid;
+  max-width: 768px;
+  padding: 1rem;
+}
+
+ // フラッシュ
+div.alert-notice {
+  @extend .alert-info;
+}
+
+div.alert-alert {
+  @extend .alert-danger;
+}
