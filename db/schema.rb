@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_27_134530) do
+ActiveRecord::Schema.define(version: 2020_03_27_140538) do
 
   create_table "graphs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.date "date"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2020_03_27_134530) do
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "score"
     t.index ["user_id", "date"], name: "index_graphs_on_user_id_and_date", unique: true
     t.index ["user_id"], name: "index_graphs_on_user_id"
   end

@@ -31,7 +31,6 @@ graphs << {
     # to_f を入れておかないと整数になるので注意！
     study_time: rand(MIN_STUDY_TIME..MAX_STUDY_TIME),
     score: rand(MIN_SCORE..MAX_SCORE),
-    subject: ["国語", "数学", "理科", "社会", "英語"]
   }
 end
 Graph.create!(graphs)

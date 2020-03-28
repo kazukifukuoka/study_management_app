@@ -34,6 +34,6 @@ class GraphsController < ApplicationController
   private
 
   def graph_params
-    params.require(:graph).permit(:date, :study_time)
+    params.require(:graph).permit(:date, :study_time, :score)
   end
 end
